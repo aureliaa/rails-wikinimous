@@ -1,0 +1,8 @@
+
+<% @articles.each do |article| %>
+  <%= markdown(article.title) %>
+  <%= markdown(article.content) %>
+<%= link_to "delete", article_path(article),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+<% end %>

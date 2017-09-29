@@ -49,3 +49,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Install faker
+gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
+
+# Install kramdown
+gem 'kramdown'
+gem 'kramdown-rails'
